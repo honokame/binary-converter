@@ -1,10 +1,41 @@
-body{
-	background-color: #F3F7EC; 
-	
+body {
+	background-color: #f3f7ec;
+	padding: 10px;
 }
 
-h1{
-	color: #E88D67; /* #006989, #005C78 */
-
+h1 {
+	padding-bottom: 20px;
+	font-size: 26pt;
+	color: #E88D67;
 }
 
+label {
+	padding-left: 40px;
+	font-size: 16pt;
+}
+
+input {
+	font-size: 16pt;
+}
+
+output {
+	padding-left: 10px;
+	font-size: 16pt;
+}
+
+button {
+	font-size: 16px;
+	height: 50px;
+	width: 70px;
+	margin-left: 20px;
+	cursor: pointer;
+	border: none;
+	border-radius: 10px;
+	background-color: #006989;
+	color: #fff;
+	transition: background-color 0.3s;
+}
+
+button:hover {
+	background-color: #005c78;
+}
