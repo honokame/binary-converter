@@ -1,4 +1,5 @@
 document.getElementById("convert").addEventListener("click", convertToBinary);
+document.getElementById("copy").addEventListener("click", copyBinary);
 
 function convertToBinary() {
   const inputDecimal = document.getElementById("inputDecimal").value;
@@ -17,4 +18,10 @@ function convertToBinary() {
       outputBinary.textContent = "0".repeat(zerocheck) + result;
     }
   } 
+}
+
+function copyBinary() {
+  const outputBinary = document.getElementById("outputBinary");
+  const copyBinary = document.getElementById("copy");
+  navigator.clipboard.writeText(outputBinary.textContent);
 }
